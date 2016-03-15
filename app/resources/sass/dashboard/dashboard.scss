@@ -1,0 +1,75 @@
+.bottom-main-tab {
+  .tab-nav {
+    border-top: none;
+    height: 60px;
+    line-height: 60px;
+    background-color: #292b2d;
+  }
+  .bottom-main-tab-item.tab-item-active {
+    background-color: $orange-theme !important;
+    color: #fff !important;
+  }
+  .bottom-main-tab-item.tab-item {
+    opacity: 1;
+    font-size: 12px;
+    background-color: $dark-tab-color;
+    border-bottom: 3px solid $orange-theme;
+    margin-right: 2px;
+    background-repeat: no-repeat;
+    background-size: 27px 24px;
+    background-position: 50% 25%;
+    color: $color-white;
+    .tab-title {
+      line-height: 90px;
+    }
+  }
+  .tab-item:last-child {
+    margin-right: 0px !important;
+  }
+  .tab-kevintv {
+    background-image: url('../resources/images/kevin-tv-select.png');
+  }
+  .tab-kevintv.tab-item-active {
+    background-image: url('../resources/images/kevin-tv-select.png');
+  }
+  .tab-store {
+    background-image: url('../resources/images/store.png');
+  }
+  .tab-store.tab-item-active {
+    background-image: url('../resources/images/store-select.png');
+  }
+  .tab-activism {
+    background-image: url('../resources/images/activism.png');
+  }
+  .tab-activism.tab-item-active {
+    background-image: url('../resources/images/activism-select.png');
+  }
+  .tab-social {
+    background-image: url('../resources/images/social.png');
+  }
+  .tab-social.tab-item-active {
+    background-image: url('../resources/images/social-select.png');
+  }
+  .tab-key {
+    background-image: url('../resources/images/the-key.png');
+  }
+  .tab-social.tab-item-active {
+    background-image: url('../resources/images/social-select.png');
+  }
+  .tab-account {
+    background-image: url('../resources/images/account-select.png');
+  }
+  .tab-account.tab-item-active {
+    background-image: url('../resources/images/account-select.png');
+  }
+}
+
+
+/* Dashboard Background */
+
+.dasboard-background {
+  background: url('../resources/images/background-blur-xhdpi.jpg');
+  background-size: 100% 112%;
+  background-position: 0px -70px;
+  background-repeat: no-repeat;
+}

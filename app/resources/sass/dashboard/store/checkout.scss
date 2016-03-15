@@ -1,0 +1,76 @@
+.checkout-header {
+  border: 0;
+  padding: 10px 10px 0px;
+  font-size: 16px;
+  i {
+    right: 0px!important;
+    top: 3px!important;
+  }
+}
+
+.checkout-rupees {
+  @include item-info();
+  @include item-icon('../resources/images/price.png');
+  padding-left: 30px;
+  background-size: auto 85%;
+  margin-left: 0px;
+  span {
+    @extend .roboto-bold;
+    margin-right: 0;
+  }
+  float: right;
+  font-size: 14px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+.checkout-total-rupees {
+  float: right;
+  font-size: 14px;
+  color: $orange-theme;
+  padding-top: 5px;
+  span {
+    @extend .roboto-bold;
+    margin-right: 0;
+  }
+}
+
+.item-thumbnail-left {
+  border: 0;
+  .checkout-rupees {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #000;
+  }
+}
+
+.subtotal-item>span {
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.subtotal-item {
+  padding: 8px;
+}
+
+.numbers-item {
+  color: rgba(0, 0, 2, 0.6);
+}
+
+.checkout-submit-button {
+  margin-top: 20px !important;
+  width: 70%;
+  padding: 0 2px;
+  min-height: 0;
+  border-radius: 30px;
+  margin: 35px auto 0;
+  font-family: 'robotolight';
+  font-size: 16px;
+}
+
+.cart-item-p {
+  padding-right: 50px;
+  color: rgba(0, 0, 2, 0.7);
+  margin-top: 0;
+}

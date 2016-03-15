@@ -1,0 +1,43 @@
+/*Custom Fonts*/
+
+.fontStyleWeight {
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Bariol_Regular 
+@font-face {
+  font-family: 'bariolregular';
+  src: url($font-path+'Bariol_Regular/Bariol_Regular.otf');
+  @extend .fontStyleWeight;
+}
+
+// Roboto-regular 
+@font-face {
+  font-family: 'robotoregular';
+  src: url($font-path+'Roboto-regular/roboto-regular-webfont.eot');
+  src: url($font-path+'Roboto-regular/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../resources/fonts/Roboto-regular/roboto-regular-webfont.woff2') format('woff2'), url('../resources/fonts/Roboto-regular/roboto-regular-webfont.woff') format('woff'), url('../resources/fonts/Roboto-regular/roboto-regular-webfont.ttf') format('truetype'), url('../resources/fonts/Roboto-regular/roboto-regular-webfont.svg#robotoregular') format('svg');
+  @extend .fontStyleWeight;
+}
+
+// Roboto-light
+@font-face {
+  font-family: 'robotolight';
+  src: url($font-path + 'Roboto-light/roboto-light-webfont.eot');
+  src: url($font-path + 'Roboto-light/roboto-light-webfont.eot?#iefix') format('embedded-opentype'), url($font-path + 'Roboto-light/roboto-light-webfont.woff2') format('woff2'), url($font-path + 'Roboto-light/roboto-light-webfont.woff') format('woff'), url($font-path + 'Roboto-light/roboto-light-webfont.ttf') format('truetype'), url($font-path + 'Roboto-light/roboto-light-webfont.svg#robotolight') format('svg');
+  @extend .fontStyleWeight;
+}
+
+// Roboto-bold
+@font-face {
+  font-family: 'robotobold';
+  src: url($font-path + 'Roboto-bold/Roboto-Bold.ttf');
+  @extend .fontStyleWeight;
+}
+
+// Roboto-thin
+@font-face {
+  font-family: 'robotothin';
+  src: url($font-path + 'Roboto-thin/Roboto-Thin.ttf');
+  @extend .fontStyleWeight;
+}

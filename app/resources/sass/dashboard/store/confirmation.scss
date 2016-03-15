@@ -1,0 +1,26 @@
+.purchase-sign {
+  background-image: url("../resources/images/purchase.png");
+  height: 150px;
+  background-size: 85px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.thankyou-note {
+  font-size: 16px;
+  color: $orange-theme;
+  border: 0;
+  padding-top: 0;
+}
+
+.order-success-note {
+  padding: 0 20px 15px;
+  font-size: 13px;
+  font-family: 'robotolight';
+}
+
+.order-number {
+  font-family: 'robotobold';
+  color: $orange-theme;
+}

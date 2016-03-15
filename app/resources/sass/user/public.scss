@@ -1,0 +1,169 @@
+.public-background {
+  background: url('../resources/images/background-xhdpi.jpg');
+  background-size: 100% 120%;
+  background-position: 0px -70px;
+  background-repeat: no-repeat;
+}
+
+.roboto-bold {
+  font-family: 'robotobold';
+  font-weight: bold;
+}
+
+@mixin label-inset($value) {
+  background-image: url($value);
+  background-repeat: no-repeat;
+  input {
+    padding-left: 35px
+  }
+}
+
+.public-content {
+  position: relative;
+  height: 80vh;
+  font-family: 'robotolight';
+  a {
+    text-decoration: none;
+    color: $divider-color;
+  }
+  @mixin bottom-scale($value) {
+    position: absolute;
+    bottom: $value+px;
+    left: 0;
+    right: 0;
+  }
+  .bottom-scale-5 {
+    @include bottom-scale(5);
+  }
+  .bottom-scale-25 {
+    @include bottom-scale(25);
+  }
+  .bottom-scale-45 {
+    @include bottom-scale(45);
+  }
+  .bottom-scale-30 {
+    @include bottom-scale(30);
+  }
+  .bottom-scale-88 {
+    @include bottom-scale(88);
+  }
+  .bottom-scale-100 {
+    @include bottom-scale(100);
+  }
+  .bottom-scale-110 {
+    @include bottom-scale(110);
+  }
+  .bottom-scale-90 {
+    @include bottom-scale(90);
+  }
+  .bottom-scale-125 {
+    @include bottom-scale(125);
+  }
+  .list-inset {
+    background: transparent;
+    .item {
+      border: none;
+      .input-label {
+        color: $color-white;
+      }
+    }
+    .item.item-stacked-label {
+      margin: 0;
+      height: 40px;
+      .input-label {
+        padding: 8px 0 0;
+        font-family: 'robotoregular';
+        font-size: 15px;
+      }
+    }
+    .item-input {
+      margin: 0 15px 12px;
+      padding: 0 16px;
+      opacity: 0.8;
+      border-radius: 3px;
+      height: 50px;
+      .icon {
+        font-size: 35px;
+        min-width: 40px;
+        color: #000;
+      }
+      input {
+        font-size: 18px;
+        line-height: 34px;
+      }
+      ::-webkit-input-placeholder {
+        height: inherit;
+        vertical-align: middle;
+      }
+      img {
+        display: none;
+      }
+    }
+    .button {
+      width: 70%;
+      padding: 2px;
+      min-height: 0;
+      border-radius: 30px;
+      margin: 35px auto 0;
+      font-family: 'robotoregular';
+      font-size: 18px;
+    }
+    /* Login */
+    .item-email {
+      @include label-inset('../resources/images/email.png');
+      background-size: auto 40%;
+      background-position: 15px;
+      border: 2px solid #fff;
+    }
+    .item-password {
+      @include label-inset('../resources/images/password.png');
+      background-size: auto 60%;
+      background-position: 17px 6px;
+      border: 2px solid #fff;
+    }
+    /* Register */
+    .item-retype-password {
+      @include label-inset('../resources/images/retype-password.png');
+      background-size: auto 60%;
+      background-position: 17px 6px;
+      border: 2px solid #fff;
+    }
+    /* Forgot Password */
+    .recover-button {
+      margin: 45px auto 0px;
+    }
+  }
+  .trial-text {
+    color: $footer-text-color;
+    .free {
+      font-style: italic;
+      color: $orange-theme;
+      @extend .roboto-bold;
+    }
+    .us-rupees {
+      @extend .roboto-bold;
+    }
+  }
+  .divider {
+    margin: 0 30px;
+    border: 1px groove $divider-color;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    padding: 1px 0 0;
+    background-color: $divider-color;
+  }
+  .public-footer {
+    @include bottom-scale(-50);
+    font-size: 18px;
+    a {
+      color: $footer-text-color;
+    }
+  }
+  .recover-note {
+    @include bottom-scale(-30);
+    font-size: 14px;
+    color: $footer-text-color;
+    line-height: 24px;
+  }
+}

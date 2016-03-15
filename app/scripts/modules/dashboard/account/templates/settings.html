@@ -1,0 +1,47 @@
+<ion-view class="settings-view">
+  <ion-content class="dasboard-background" has-bouncing="true">
+    <div class="settings-container">
+      <div class="item item-toggle notifications">
+        Notifications
+        <label class="toggle toggle-assertive">
+          <input ng-model="settings.toggle" type="checkbox">
+          <div class="track">
+            <div class="handle"></div>
+          </div>
+        </label>
+      </div>
+      <div class="item text-item">
+        <span>Email</span>
+        <span class="item-input">
+          <input ng-model="settings.email.value" type="email" disabled="settings.email.disabled">
+        </span>
+      </div>
+      <div class="item text-item">
+        <span>Password</span>
+        <span class="item-input">
+          <input ng-model="settings.password.value" type="password" disabled="settings.password.disabled">
+          <img src="resources/images/edit.png" ng-click="editSettings('password')">
+        </span>
+      </div>
+      <div class="item text-item">
+        <span>Mobile (for push messages)</span>
+        <span class="item-input">
+          <input focus-me focus="settings.mobile.disabled" ng-model="settings.mobile.value" type="text" ng-blur="editSettings('mobile')" ng-disabled="settings.mobile.disabled">
+          <img src="resources/images/edit.png" ng-click="editSettings('mobile')">
+        </span>
+      </div>
+      <div class="item text-item">
+        <span>Shipping Address 1</span>
+        <span class="item-input mb-5">
+          <input ng-model="settings.shipping1.value" type="text" disabled="settings.shipping1.disabled">
+          <img src="resources/images/edit.png" ng-click="editSettings('address')">
+        </span>
+        <span>Shipping Address 2</span>
+        <span class="item-input">
+          <input ng-model="settings.shipping2.value" type="text" type="email" disabled="settings.shipping2.disabled">
+          <img src="resources/images/edit.png" ng-click="editSettings('address')">
+        </span>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

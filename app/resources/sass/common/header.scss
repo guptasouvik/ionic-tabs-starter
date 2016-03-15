@@ -1,0 +1,44 @@
+/* Top Header */
+
+.bar {
+  height: 55px;
+  .title {
+    margin: 0;
+    height: 55px;
+    line-height: 55px;
+  }
+}
+
+// .header-item {
+//   background: url('../resources/images/top-header.png');
+//   background-size: 100%;
+//   // background-position: 0px -15px;
+//   background-position: 50% 100%;
+//   background-repeat: no-repeat;
+// }
+.my-back-button {
+  // content: url('../resources/images/back.png');
+  // width: 48px;
+  color: $tab-color;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.bar.bar-header {
+  background: url('../resources/images/top-header.png') !important;
+  background-size: 100% 80px !important;
+  background-position: 0 140px !important;
+  background-repeat: no-repeat;
+  border-bottom: 0 !important;
+}
+
+.back-icon {
+  z-index: 1;
+  background: url('../resources/images/back.png');
+  background-size: 100%;
+  // background-position: 50% 100%;
+  background-repeat: no-repeat;
+}
+
+
+/* End Top Header */

@@ -1,0 +1,42 @@
+// .col-images {
+//   border: 2px solid #fff;
+//   margin: 4px;
+//   padding: 0;
+//   img {
+//     width: 148px;
+//     height: 175px;
+//   }
+// }
+.col-images-left {
+  margin: 0 1px 5px 2px;
+}
+
+.col-images-right {
+  margin: 0 2px 5px 1px;
+}
+
+.films-image {
+  border: 2px solid #fff;
+  border-radius: 2px;
+  img {
+    width: 147px;
+    height: 154px
+  }
+}
+
+.films-albums-list {
+  width: 100%;
+  .films-image {
+    border: 2px solid #fff !important;
+    border-radius: 2px;
+    width: calc(50% - 18px);
+    display: inline-block;
+    background: transparent;
+  }
+  .films-image:nth-child(odd) {
+    margin: 5px 6px 5px 12px;
+  }
+  .films-image:nth-child(even) {
+    margin: 5px 12px 5px 6px;
+  }
+}

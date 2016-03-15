@@ -1,0 +1,37 @@
+<ion-view>
+  <ion-content class="public-background" scroll="true" overflow-scroll="false" has-bouncing="false">
+    <div class="public-content">
+      <form class="bottom-scale-125" name='sigup' ui-form='formSignup'>
+        <div class="list list-inset">
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Sign Up</span>
+          </label>
+          <label class="item item-input item-email" ng-class="(sigup.email.$invalid && sigup.email.$dirty) ? 'error-input' : 'right-input' ">
+            <input type="email" placeholder="E-mail" ng-model="vm.email" name='email' ui-required ui-email>
+            <img src="./resources/images/exclamation.png" class="error-exclamination">
+          </label>
+          <label class="item item-input item-password" ng-class="(sigup.password.$invalid && sigup.password.$dirty) ? 'error-input' : 'right-input' ">
+            <input type="password" placeholder="Password" ng-model='vm.password' name='password' ui-required>
+          </label>
+          <label class="item item-input item-retype-password" ng-class="(sigup.password.$invalid && sigup.password.$dirty) ? 'error-input' : 'right-input' ">
+            <input type="password" placeholder="Retype Password" ng-model='vm.rePassword' name='rePassword' ui-required>
+          </label>
+          <button class="button button-block button-positive" type="submit" ng-disabled='vm.onProgress'>
+            Sign Up
+          </button>
+        </div>
+      </form>
+      <p class="bottom-scale-25 text-center trial-text">
+        First 7 days <span class="free">free</span>
+        <br/> Then just <span class="us-rupees"> &#36<span>2.99</span></span> per month
+        <br/> Cancel anytime
+      </p>
+      <div class="row  bottom-scale-5">
+        <div class="col divider"></div>
+      </div>
+      <p class="public-footer text-center">
+        <a ui-sref="app.signin">Already a Member? Sign In</a>
+      </p>
+    </div>
+  </ion-content>
+</ion-view>

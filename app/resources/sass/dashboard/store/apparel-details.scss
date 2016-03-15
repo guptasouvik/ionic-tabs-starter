@@ -1,0 +1,66 @@
+/* apparel-item Details */
+
+.col-rupees {
+  @include item-info();
+  @include item-icon('../resources/images/price.png');
+  padding-left: 30px;
+  background-size: auto 75%;
+  margin-left: 0px;
+  span {
+    @extend .roboto-bold;
+    margin-right: 0;
+  }
+  color: rgba(0, 0, 2, 0.8);
+}
+
+.apparel-item-details {
+  .apparel-item-details-header {
+    padding-bottom: 0;
+  }
+  p {
+    @extend .item-p;
+    margin-top: 0;
+    color: rgba(0, 0, 3, 0.7);
+  }
+  .row .col {
+    .col-rupees {
+      font-size: 14px;
+      background-size: auto 85%;
+      margin-left: 4px;
+    }
+  }
+}
+
+.col-select {
+  .label-select .item-input {
+    margin-left: 12px;
+    font-size: 14px;
+    padding: 4px 0 4px 16px;
+  }
+}
+
+.col-cart {
+  .add-cart-button {
+    margin-top: -2px;
+    font-size: 13px!important;
+  }
+}
+
+.apparel-item-image {
+  width: 320px!important;
+  height: 283px!important;
+}
+
+.pick-size-div {
+  margin: 2px auto 1px;
+  display: -webkit-box;
+  .item-input.item-select {
+    margin-left: 0px;
+    font-size: 13px;
+    padding: 5px 0 3px;
+  }
+  i {
+    vertical-align: sub;
+    font-size: 14px;
+  }
+}

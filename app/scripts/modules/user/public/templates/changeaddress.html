@@ -1,0 +1,51 @@
+<div class="shipping-address-view">
+  <form class="shipping-address-container">
+    <div class="item text-item">
+      <span>Label for this Address (Home,Work etc..)</span>
+      <label class="item-input">
+        <input type="text">
+      </label>
+    </div>
+    <div class="item text-item">
+      <span>Name</span>
+      <label class="item-input">
+        <input type="text">
+      </label>
+    </div>
+    <div class="item text-item">
+      <span>Street Address 1</span>
+      <label class="item-input">
+        <input type="text">
+      </label>
+    </div>
+    <div class="item text-item">
+      <span>Street Address 2</span>
+      <label class="item-input">
+        <input type="text">
+      </label>
+    </div>
+    <div class="item text-item">
+      <span>City</span>
+      <label class="item-input">
+        <input type="text">
+      </label>
+    </div>
+    <div class="item text-item state-item">
+      <span>State</span>
+      <label class="item item-input icon-right label-select">
+        <select class="item item-input item-select">
+          <option value="LA" selected>LA</option>
+          <option value="TX">TX</option>
+          <option value="CF">CF</option>
+        </select>
+        <i class="icon ion-arrow-down-b ios-arrow-down" ng-if="!loading"></i>
+      </label>
+    </div>
+    <div class="item text-item zip-item">
+      <span>Zip</span>
+      <label class="item-input">
+        <input type="number">
+      </label>
+    </div>
+  </form>
+</div>

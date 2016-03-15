@@ -1,0 +1,14 @@
+<ion-view>
+  <ion-content class="dasboard-background mt-20" scroll="true" has-bouncing="true">
+    <div class="list mb-60 mt-5">
+      <div class="apparel-item-container" ng-repeat="item in vm.apparels">
+        <div class="item item-image apparel-image" ng-click="vm.goToApparelDetails(item)">
+          <img ng-src="./resources/images/apparels/{{item.thumbnail}}.jpg">
+        </div>
+        <div class="item apparel-item">
+          <span class="apparel-item-header">{{item.title}}</span>
+          <p class="rupees-text text-center">&#36 {{item.price}}</p>
+        </div>
+      </div>
+  </ion-content>
+</ion-view>

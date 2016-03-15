@@ -1,0 +1,39 @@
+<ion-view>
+  <ion-content class="dasboard-background mt-20" scroll="true" has-bouncing="true">
+    <div class="list mb-60 mt-10">
+      <div ng-repeat="cartItem in vm.cartItemList track by $index">
+        <div class="card" ng-if="cartItem.apparelItemFlag">
+          <div class="item item-icon-right checkout-header">
+            Sound Tone Pack 01 :: {{cartItem.id}}
+            <i class="icon ion-ios-close-empty" ng-click="vm.removeCartItem($index)"></i>
+          </div>
+          <p class="item-p cart-item-p">Lorem ipsum dolor sit amet, probo dicit integre eu duo, timeam definitiones necessitatibus id ius. Ne dolorum albucius copiosae vim, ut vix sale debet.</p>
+          <div class="checkout-rupees">
+            <span>&#36<span>29.00</span></span>
+          </div>
+        </div>
+        <div class="card" ng-if="cartItem.soundItemFlag">
+          <div class="item item-icon-right checkout-header">
+            Sound Tone Pack 01 :: {{cartItem.id}}
+            <i class="icon ion-ios-close-empty" ng-click="vm.removeCartItem(1)"></i>
+          </div>
+          <div class="item item-thumbnail-left">
+            <img src="./resources/images/background.jpg">
+            <div class="checkout-rupees">
+              <span>&#36<span>29.00</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card item subtotal-item" ng-if="vm.cartItemList.length">
+        <span>Subtotal : <span class="numbers-item">{{vm.cartItemList.length}} items</span></span>
+        <div class="checkout-total-rupees">
+          <span>&#36<span>{{vm.totalPrice}}</span></span>
+        </div>
+      </div>
+      <div class="button button-block button-positive checkout-submit-button" ui-sref="app.dashboard.store.paymentshipping" ng-if="vm.cartItemList.length">
+        Continue to Shipping
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

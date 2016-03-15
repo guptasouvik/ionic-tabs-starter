@@ -1,0 +1,29 @@
+/**used in Font Face**/
+
+$font-path: "../resources/fonts/";
+$ionicons-font-path: $font-path + "ionicons" !default;
+@import "fonts-face";
+@import "common/util";
+@import "bower_components/ionic/scss/ionic";
+@import 'common/header';
+@import "common/common";
+@import "dashboard/account/account";
+@import "user/public";
+@import "user/changeaddress";
+@import "user/changepassword";
+@import "dashboard/dashboard";
+@import "dashboard/kevintv/kevintv";
+@import "dashboard/store/store";
+@import "dashboard/store/filmsalbums";
+@import "dashboard/store/soundboard";
+@import "dashboard/store/apparel";
+@import "dashboard/store/apparel-details";
+@import "dashboard/store/checkout";
+@import "dashboard/store/payment-shipping";
+@import "dashboard/store/confirmation";
+@import "dashboard/activism/activism";
+@import "dashboard/social/social";
+@import "dashboard/account/settings";
+* {
+  font-family: "robotoregular";
+}

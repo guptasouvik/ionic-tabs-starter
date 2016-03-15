@@ -1,0 +1,120 @@
+.margin-10 {
+  margin: 10px;
+}
+
+.padding-0 {
+  padding: 0;
+}
+
+.mt-0 {
+  margin-top: 10px;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mt-10 {
+  margin-top: 10px!important;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-60 {
+  margin-bottom: 60px!important;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.card-item-radius {
+  border-radius: 2px !important;
+}
+
+
+/* Card */
+
+.card {
+  margin: 18px 12px 18px 12px;
+}
+
+
+/* item-select */
+
+.label-select {
+  background-color: $select-color;
+  padding: 0;
+  .item-select {
+    background-color: $select-color;
+    -webkit-appearance: none;
+  }
+}
+
+
+/**** popup *******/
+
+.popup {
+  width: 80% !important;
+  min-width: 320px !important;
+  max-width: 500px !important;
+  background-color: rgba(255, 255, 255, 1) !important;
+  .popup-head {
+    background-color: #fff;
+    border-bottom: none;
+    .popup-title {
+      font-size: 17px;
+    }
+  }
+  .popup-body {
+    padding: 0px;
+    overflow-x: hidden;
+    margin-bottom: 10px;
+  }
+  .popup-buttons {
+    padding: 0px;
+    min-height: 45px;
+    button {
+      border-radius: 0px;
+      padding: 0px;
+      border-color: #aaa !important;
+      border-right: 0.5px solid;
+      margin: 0px;
+    }
+    .button-positive {
+      background: #fff;
+      color: #fe8800;
+    }
+  }
+}
+
+.popup-open {
+  .view-container {
+    background-color: #000 !important;
+    .kevin-hart-app {
+      opacity: 0.1 !important;
+    }
+  }
+}
+
+
+/*Error (form validation)*/
+
+input.error-input,
+label.error-input {
+  border: 2px solid $error-color !important;
+  img {
+    display: inline-block !important;
+  }
+}
+
+.error-exclamination {
+  height: 20px;
+  width: 25px;
+}

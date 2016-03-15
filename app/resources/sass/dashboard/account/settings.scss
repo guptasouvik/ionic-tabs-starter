@@ -1,0 +1,44 @@
+.settings-view {
+  background: #a89102;
+  margin-top: 22px;
+  .settings-container {
+    padding: 10px 11px 99px 11px;
+    .item {
+      margin: 10px 0;
+      color: #222;
+      border-radius: 2px;
+    }
+    .notifications {
+      .toggle.toggle-assertive input:checked + .track {
+        border-color: $orange-theme;
+        background-color: $orange-theme;
+      }
+    }
+    .text-item {
+      span {
+        font-size: 14px;
+      }
+      span {
+        display: flex;
+        padding-left: 0px;
+        padding-right: 0px;
+        position: relative;
+        input[disabled],
+        select[disabled],
+        textarea[disabled],
+        input {
+          background-color: #e4e4e4;
+        }
+        input {
+          height: 45px;
+          padding-left: 10px;
+          color: #555;
+        }
+        img {
+          width: 32px;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}

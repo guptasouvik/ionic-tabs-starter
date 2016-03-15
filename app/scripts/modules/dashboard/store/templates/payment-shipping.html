@@ -1,0 +1,20 @@
+<ion-view>
+  <ion-content class="dasboard-background mt-10" scroll="true" has-bouncing="true">
+    <div class="list mb-60">
+      <div class="card">
+        <div class="item item-icon-left ship-to-address">
+          <i class="icon" ng-class="vm.homeAddress ? 'ion-android-radio-button-on': 'ion-android-radio-button-off'" ng-click="vm.homeRadio()"></i> Ship to "HOME"
+          <div class="edit-button" ng-click="vm.editAddress()"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="item item-icon-left ship-to-address">
+          <i class="icon ion-android-add icon-add" ng-click="vm.newShippingAddress()"></i> Add New Shipping Address
+        </div>
+      </div>
+      <div class="button button-block button-positive checkout-submit-button" ui-sref="app.dashboard.store.confirmation">
+        Pay Now
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

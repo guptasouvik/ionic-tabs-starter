@@ -1,0 +1,40 @@
+/* Apparel */
+
+.apparel-item-container {
+  border-radius: 2px;
+  width: calc(50% - 12px);
+  display: inline-block;
+  .apparel-image {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border: 0;
+    margin: 0;
+  }
+  .apparel-item {
+    text-align: center;
+    padding: 16px 2px;
+    border-top: 0;
+    border-color: #fff;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    margin: 0;
+    .apparel-item-header {
+      font-size: 14px;
+      font-family: 'robotolight';
+      color: #000002;
+    }
+    .rupees-text {
+      font-family: 'robotolight';
+      font-size: 12px;
+      color: #7c7a7d;
+    }
+  }
+}
+
+.apparel-item-container:nth-child(odd) {
+  margin: 5px 4px 5px 8px;
+}
+
+.apparel-item-container:nth-child(even) {
+  margin: 5px 8px 5px 4px;
+}

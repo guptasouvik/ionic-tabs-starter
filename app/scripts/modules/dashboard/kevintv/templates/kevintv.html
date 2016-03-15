@@ -1,0 +1,43 @@
+<ion-view class="kevin-tv-view">
+  <ion-content class="dasboard-background" has-bouncing="true">
+    <div class="list list-inset search-input-area">
+      <label class="item item-input">
+        <input type="text" placeholder="Enter keywords..." ng-model="search.text">
+      </label>
+    </div>
+    <div class="video-list">
+      <div class="row" ng-repeat="video in videos | filter:search.text" ng-if="$index%2===0">
+        <div class="col-50" ng-click="openLink(videos[$index].videoLink)" ng-if="$index < videos.length">
+          <div class="image-area" style="background-image:url('resources/images/play-btn.png'), url('{{videos[$index].videoThumbnail}}')">
+          </div>
+          <div class="detail-area">
+            <div class="video-name">
+              {{videos[$index].videoName}}
+            </div>
+            <div class="video-date video-info">
+              {{videos[$index].videoDate}}
+            </div>
+            <div class="video-duration video-info">
+              {{videos[$index].videoDuration}}
+            </div>
+          </div>
+        </div>
+        <div class="col-50" ng-click="openLink(videos[$index+1].videoLink)" ng-if="$index + 1 < videos.length">
+          <div class="image-area" style="background-image:url('resources/images/play-btn.png'), url('{{videos[$index+1].videoThumbnail}}')">
+          </div>
+          <div class="detail-area">
+            <div class="video-name">
+              {{videos[$index + 1].videoName}}
+            </div>
+            <div class="video-date video-info">
+              {{videos[$index + 1].videoDate}}
+            </div>
+            <div class="video-duration video-info">
+              {{videos[$index + 1].videoDuration}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

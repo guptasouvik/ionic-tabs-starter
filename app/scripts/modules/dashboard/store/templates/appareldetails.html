@@ -1,0 +1,43 @@
+<ion-view>
+  <ion-content class="dasboard-background mt-20" scroll="true" has-bouncing="true">
+    <div class="list mb-60">
+      <div class="card mt-10">
+        <div class="item item-image">
+          <img ng-src="./resources/images/apparels/{{vm.apparel.thumbnail}}.jpg" class="apparel-item-image">
+        </div>
+      </div>
+      <div class="card apparel-item-details">
+        <div class="row apparel-item-details-header">
+          <div class="col col-67">
+            <span class="apparel-item-header">{{vm.apparel.title}}</span>
+          </div>
+          <div class="col col-33 text-right">
+            <div class="col-rupees">
+              <span>&#36<span>{{vm.apparel.price}}</span></span>
+            </div>
+          </div>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, probo dicit integre eu duo, timeam definitiones necessitatibus id ius. Ne dolorum albucius copiosae vim, ut vix sale debet.
+        </p>
+        <div class="row">
+          <div class="col col-select text-center">
+            <div class="item item-input label-select">
+              <div class="pick-size-div">
+                <select class="item item-input item-select">
+                  <option value="" selected>Pick a Size</option>
+                  <option ng-repeat="size in vm.apparel.sizes" value="{{size}}">{{size}}</option>
+                </select>
+                <i class="icon ion-arrow-down-b ios-arrow-down" ng-if="!loading"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col col-cart">
+            <button class="button button-small button-balanced add-cart-button width-100" ng-disabled="vm.cartItemAdded" ng-click="vm.addCart(vm.apparel)">{{vm.cartItem[0].added ? vm.cartAddedButtonText: vm.cartButtonText}}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

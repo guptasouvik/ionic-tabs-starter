@@ -1,0 +1,47 @@
+.soundboard-card {
+  margin: 18px 12px 18px 12px;
+  h4 {
+    font-size: 16px!important;
+    @extend .margin-10;
+  }
+  p {
+    font-size: 12px!important;
+    @extend .item-p;
+    margin: -8px 10px 15px!important;
+  }
+  .row {
+    padding: 0 5px;
+    .col-preview {
+      @include item-info();
+      @include item-icon('../resources/images/preview.png');
+      padding-left: 28px;
+      background-size: auto 55%;
+      background-position: 8px 6px;
+      font-size: 16px!important;
+      // line-height: 30px;
+    }
+    .col-paused {
+      @include item-info();
+      @include item-icon('../resources/images/sound-on.png');
+      padding-left: 28px;
+      background-size: auto 55%;
+      background-position: 8px 6px;
+      font-size: 16px!important;
+    }
+    .col-rupees {
+      @include item-info();
+      @include item-icon('../resources/images/price.png');
+      padding-left: 30px;
+      background-size: auto 75%;
+      // margin-left: 32px;
+      font-size: 16px!important;
+      span {
+        @extend .roboto-bold;
+        margin-right: 5px;
+      }
+    }
+    .add-cart-button {
+      padding: 2px 15px;
+    }
+  }
+}

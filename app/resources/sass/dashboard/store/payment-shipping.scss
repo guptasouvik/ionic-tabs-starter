@@ -1,0 +1,28 @@
+.item-icon-left .icon {
+  font-size: 24px;
+  color: $orange-theme;
+}
+
+.icon-add {
+  font-size: 28px !important;
+}
+
+.item-icon-left {
+  font-size: 14px;
+}
+
+.ship-to-address {
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 48px;
+}
+
+.edit-button {
+  @include item-info();
+  @include item-icon('../resources/images/edit.png');
+  background-size: auto 72%;
+  background-position: 0px 0px;
+  float: right;
+  height: 25px;
+  width: 25px;
+}

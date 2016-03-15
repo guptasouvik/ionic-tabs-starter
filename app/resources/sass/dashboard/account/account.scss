@@ -1,0 +1,60 @@
+.tabs-positive > .tabs,
+.tabs.tabs-positive {
+  border-color: #000;
+  background-color: #000;
+}
+
+.top-sub-tabs {
+  .tabs {
+    margin-top: 11px;
+    background-color: #000 !important;
+    padding: 0 5px!important;
+  }
+  .tab-item {
+    color: $sub-tab-font-color;
+    font-size: 14px;
+  }
+  .tab-item-active {
+    color: $sub-tab-font-active-color !important;
+    span {
+      padding: 5px 0px;
+      border-bottom: 3px solid;
+    }
+  }
+  .tab-nav-tab {
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 391px) and (min-width: 365px) {
+  .apparel-tab {
+    max-width: 70px;
+  }
+}
+
+@media (max-width: 365px) and (min-width: 325px) {
+  .films-tab {
+    max-width: 114px;
+  }
+  .soundboard-tab {
+    max-width: 88px;
+  }
+  .apparel-tab {
+    max-width: 60px;
+  }
+  .checkout-tab {
+    max-width: 80px;
+  }
+}
+
+@media (max-width: 325px) {
+  .soundboard-tab {
+    max-width: 90px;
+  }
+  .apparel-tab {
+    max-width: 50px;
+  }
+  .checkout-tab {
+    max-width: 75px;
+  }
+}
